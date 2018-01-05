@@ -1,0 +1,53 @@
+beam@Beam:~$ echo hello world
+hello world
+beam@Beam:~$ passwd
+Changing password for beam.
+(current) UNIX password: 
+passwd: Authentication token manipulation error
+passwd: password unchanged
+beam@Beam:~$ date
+Fri Jan  5 13:30:56 ICT 2018
+beam@Beam:~$ hostname
+Beam
+beam@Beam:~$ arch
+x86_64
+beam@Beam:~$ uname -a
+Linux Beam 4.10.0-28-generic #32~16.04.2-Ubuntu SMP Thu Jul 20 10:19:48 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+beam@Beam:~$ dmesg
+[  436.371494] wlp2s0: associate with 54:13:79:0e:89:dd (try 1/3)
+[  436.399813] wlp2s0: RX AssocResp from 54:13:79:0e:89:dd (capab=0x1431 status=0 aid=5)
+[  436.399972] wlp2s0: associated
+[  497.335747] wlp2s0: authenticate with 54:13:79:0e:89:dd
+[  497.355452] wlp2s0: No basic rates, using min rate instead
+[  497.355510] wlp2s0: send auth to 54:13:79:0e:89:dd (try 1/3)
+[  497.359860] wlp2s0: authenticated
+[  497.361330] wlp2s0: associate with 54:13:79:0e:89:dd (try 1/3)
+[  497.368831] wlp2s0: RX AssocResp from 54:13:79:0e:89:dd (capab=0x1431 status=0 aid=5)
+[  497.368973] wlp2s0: associated
+beam@Beam:~$ uptime
+ 13:31:22 up 10 min,  1 user,  load average: 0.32, 0.45, 0.29
+beam@Beam:~$ who am i
+beam@Beam:~$ whoami
+beam
+beam@Beam:~$ who
+beam     tty7         2018-01-05 13:21 (:0)
+beam@Beam:~$ id
+uid=1000(beam) gid=1000(beam) groups=1000(beam),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),113(lpadmin),128(sambashare)
+beam@Beam:~$ last
+beam     tty7         :0               Fri Jan  5 13:21    gone - no logout
+reboot   system boot  4.10.0-28-generi Fri Jan  5 13:21   still running
+beam     tty7         :0               Fri Jan  5 13:10 - down   (00:10)
+reboot   system boot  4.10.0-28-generi Fri Jan  5 13:10 - 13:21  (00:10)
+beam     tty7         :0               Fri Jan  5 19:40 - crash  (-6:-30)
+reboot   system boot  4.10.0-28-generi Fri Jan  5 19:40 - 13:21  (-6:-19)
+
+wtmp begins Thu Jan  4 10:37:43 2018
+beam@Beam:~$ finger
+Login     Name       Tty      Idle  Login Time   Office     Office Phone
+beam      Beam       tty7       10  Jan  5 13:21 (:0)
+beam@Beam:~$ w
+ 13:31:44 up 10 min,  1 user,  load average: 0.37, 0.45, 0.29
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+beam     tty7     :0               13:21   10:10  17.22s  0.20s /sbin/upstart -
+beam@Beam:~$ 
+
