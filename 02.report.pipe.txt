@@ -1,0 +1,36 @@
+beam@Beam:/bin$ cd /bin
+beam@Beam:/bin$ ls | grep list
+
+beam@Beam:~$ cat /etc/passwd | wc -l
+42
+
+beam@Beam:~$ free
+              total        used        free      shared  buff/cache   available
+Mem:        3927744     1416204      962976      404068     1548564     1818672
+Swap:             0           0           0
+
+
+beam@Beam:~$ cat /proc/cpuinfo | grep "cpu"
+cpu family	: 6
+cpu MHz		: 799.914
+cpu cores	: 2
+cpuid level	: 13
+cpu family	: 6
+cpu MHz		: 799.914
+cpu cores	: 2
+cpuid level	: 13
+cpu family	: 6
+cpu MHz		: 799.914
+cpu cores	: 2
+cpuid level	: 13
+cpu family	: 6
+cpu MHz		: 799.914
+cpu cores	: 2
+cpuid level	: 13
+
+
+beam@Beam:~$ find /home/beam/Pictures/ | grep .jpg | wc -l
+0
+beam@Beam:~$ 
+
+
