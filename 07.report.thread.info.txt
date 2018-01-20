@@ -1,0 +1,9 @@
+beam@Beam:~$ ps -e | grep firefox
+ 1973 ?        00:06:11 firefox
+beam@Beam:~$ ps -o nlwp 1973
+NLWP
+  58
+beam@Beam:~$ ls /proc/1973/task | wc -w
+56
+beam@Beam:~$ 
+
